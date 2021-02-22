@@ -24,3 +24,36 @@ fun power(m: Float, n: Float):Float {
 }
 
 fun average(m: Float, n: Float):Float = division(sum(m, n),2.0f)
+
+fun log(m: Float, n: Float):Float {
+    require(m > 0f){"Valor de M fora do range permitido"}
+    require(n > 1f){"Valor de N fora do range permitido"}
+
+    var logarithming:Float = m
+    var base:Float = n
+    var res:Float = 0f
+    while (logarithming >= base){
+        logarithming = division(logarithming, base)
+        res = sum(res,1f)
+    }
+
+    if (logarithming != 1f){
+        var coef:Float = 0.5f
+        var divisionCoef:Float = 0f
+
+        while(logarithming != 1f){
+            base = sqrt(base);
+
+            if (logarithming >= base){
+                logarithming = division(logarithming, base)
+                coef = division(coef, power(2f, divisionCoef))
+                res = sum(res, coef)
+
+                divisionCoef = 0f
+            }
+
+            divisionCoef = sum(divisionCoef, 1f)
+        }
+    }
+    return res
+}
