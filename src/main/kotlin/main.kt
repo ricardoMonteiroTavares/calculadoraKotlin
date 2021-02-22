@@ -22,3 +22,5 @@ fun power(m: Float, n: Float):Float {
     if (m < 0) return multiplication(multiplication(base, inverter).pow(n), inverter)
     return m.pow(n)
 }
+
+fun average(m: Float, n: Float):Float = division(sum(m, n),2.0f)
