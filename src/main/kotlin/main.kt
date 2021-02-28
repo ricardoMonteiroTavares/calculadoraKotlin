@@ -12,42 +12,42 @@ fun main(args: Array<String>) {
             1 -> {
                 num1 = getNumber("Informe o primeiro número: ")
                 num2 = getNumber("Informe o segundo número: ")
-                println("O resultado da soma é: ${sum(num1, num2)}")
+                println("Resultado: ${sum(num1, num2)}")
             }
             2 -> {
                 num1 = getNumber("Informe o primeiro número: ")
                 num2 = getNumber("Informe o segundo número: ")
-                println("O resultado da soma é: ${subtraction(num1, num2)}")
+                println("Resultado: ${subtraction(num1, num2)}")
             }
             3 -> {
                 num1 = getNumber("Informe o primeiro número: ")
                 num2 = getNumber("Informe o segundo número: ")
-                println("O resultado da soma é: ${multiplication(num1, num2)}")
+                println("Resultado: ${multiplication(num1, num2)}")
             }
             4 -> {
                 num1 = getNumber("Informe o dividendo: ")
                 num2 = getNumber("Informe o divisor: ")
-                println("O resultado da soma é: ${division(num1, num2)}")
+                println("Resultado: ${division(num1, num2)}")
             }
             5 -> {
                 num1 = getNumber("Informe o dividendo: ")
                 num2 = getNumber("Informe o divisor: ")
-                println("O resultado da soma é: ${mod(num1, num2)}")
+                println("Resultado: ${mod(num1, num2)}")
             }
             6 -> {
                 num1 = getNumber("Informe a base: ")
                 num2 = getNumber("Informe a potência: ")
-                println("O resultado da soma é: ${power(num1, num2)}")
+                println("Resultado: ${power(num1, num2)}")
             }
             7 -> {
                 num1 = getNumber("Informe o logaritmando: ")
                 num2 = getNumber("Informe a base: ")
-                println("O resultado da soma é: ${log(num1, num2)}")
+                println("Resultado: ${log(num1, num2)}")
             }
             8 -> {
                 num1 = getNumber("Informe o primeiro número: ")
                 num2 = getNumber("Informe o segundo número: ")
-                println("O resultado da soma é: ${average(num1, num2)}")
+                println("Resultado: ${average(num1, num2)}")
             }
             9 -> {
                 run = false
