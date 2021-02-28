@@ -96,8 +96,8 @@ fun power(m: Float, n: Float):Float {
 fun average(m: Float, n: Float):Float = division(sum(m, n),2.0f)
 
 fun log(m: Float, n: Float):Float {
-    require(m > 0f){"Valor de M fora do range permitido"}
-    require(n > 1f){"Valor de N fora do range permitido"}
+    require(m > 0f){"Valor do logaritmando fora do range permitido"}
+    require(n > 1f){"Valor da base fora do range permitido"}
 
     var logarithming:Float = m
     var base:Float = n
