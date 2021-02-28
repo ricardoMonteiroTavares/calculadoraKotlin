@@ -1,6 +1,61 @@
 import kotlin.math.*
 
 fun main(args: Array<String>) {
+    var run:Boolean = true
+    do {
+        menu()
+        print("Informe a opção desejada: ")
+        var option:Int = readLine()!!.toInt()
+        var num1:Float
+        var num2:Float
+        when(option){
+            1 -> {
+                num1 = getNumber("Informe o primeiro número: ")
+                num2 = getNumber("Informe o segundo número: ")
+                println("O resultado da soma é: ${sum(num1, num2)}")
+            }
+            2 -> {
+                num1 = getNumber("Informe o primeiro número: ")
+                num2 = getNumber("Informe o segundo número: ")
+                println("O resultado da soma é: ${subtraction(num1, num2)}")
+            }
+            3 -> {
+                num1 = getNumber("Informe o primeiro número: ")
+                num2 = getNumber("Informe o segundo número: ")
+                println("O resultado da soma é: ${multiplication(num1, num2)}")
+            }
+            4 -> {
+                num1 = getNumber("Informe o dividendo: ")
+                num2 = getNumber("Informe o divisor: ")
+                println("O resultado da soma é: ${division(num1, num2)}")
+            }
+            5 -> {
+                num1 = getNumber("Informe o dividendo: ")
+                num2 = getNumber("Informe o divisor: ")
+                println("O resultado da soma é: ${mod(num1, num2)}")
+            }
+            6 -> {
+                num1 = getNumber("Informe a base: ")
+                num2 = getNumber("Informe a potência: ")
+                println("O resultado da soma é: ${power(num1, num2)}")
+            }
+            7 -> {
+                num1 = getNumber("Informe o logaritmando: ")
+                num2 = getNumber("Informe a base: ")
+                println("O resultado da soma é: ${log(num1, num2)}")
+            }
+            8 -> {
+                num1 = getNumber("Informe o primeiro número: ")
+                num2 = getNumber("Informe o segundo número: ")
+                println("O resultado da soma é: ${average(num1, num2)}")
+            }
+            9 -> {
+                run = false
+            }
+            else -> println("Opção Inválida!!\n")
+        }
+
+    }while(run)
 }
 
 fun getNumber(msg: String): Float {
