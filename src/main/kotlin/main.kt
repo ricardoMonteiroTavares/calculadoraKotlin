@@ -3,6 +3,21 @@ import kotlin.math.*
 fun main(args: Array<String>) {
 }
 
+fun getNumber(msg: String): Float {
+    print(msg)
+    return readLine()!!.toFloat()
+}
+
+fun menu(){
+    println("\nBem vindo a calculadora!\n")
+    println("Em todas as funções necessitam colocar dois números\n")
+    println("Selecione uma das opções abaixo:\n")
+    println("1 - Soma       2 - Substração  3 - Multiplicação ")
+    println("4 - Divisão    5 - Resto       6 - Potência")
+    println("7 - Logaritmo  8 - Média       9 - Sair\n\n")
+
+}
+
 fun sum(m: Float, n: Float):Float = m.plus(n)
 
 fun subtraction(m: Float, n: Float):Float = m.minus(n)
